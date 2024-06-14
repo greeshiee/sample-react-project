@@ -1,36 +1,35 @@
 import Head from "next/head";
-import { Container, Row, Card, Button } from "react-bootstrap";
+import { Container, Row, Card, Button, Col, Form } from "react-bootstrap";
+
+import CustomFooter from "../components/customfooter.jsx";
+import Link from "next/link";
+
+
 
 export default function Home() {
   return (
+    
     <Container className="md-container">
       <Head>
         <title>ReactJS with react-bootstrap</title>
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
+  
       <Container>
-        <h1>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-        <p>
-          Get started by editing <code>pages/index.js</code>
-        </p>
-        <Container>
-          
-          
-        </Container>
+        <h1>Welcome To My Sample Project!</h1>
+        <p>This is a simple project using react to make a default log in and sign up page. The project uses React, NextJS, and React-Bootstrap to make this possible.</p>
+        <p>You can find the source code for this website on GitHub at this <Link href="https://github.com/greeshiee/sample-react-project">repository</Link></p>
+        <h2>Click Here to Sign Up or Log In!</h2>
+        <Col>
+          <Link href="/signup">
+            <Button className="signup" variant="dark">Sign Up</Button>
+          </Link>
+          <Link href="/login">
+            <Button className="login" variant="dark">Log In</Button>
+          </Link>
+        </Col>
+        <CustomFooter/>
       </Container>
-
-      <footer className="cntr-footer">
-        <a
-          href="https://vercel.com?filter=next.js&utm_source=github&utm_medium=example&utm_campaign=next-example"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className="sml-logo" />
-        </a>
-      </footer>
     </Container>
   );
 }
