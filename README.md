@@ -1,27 +1,16 @@
-# Next.js with react-bootstrap example
+# Sample React Project
+This example shows a simple sign up and log in page. The application uses the Next.JS(https://github.com/vercel/next.js) and React-Bootstrap(https://github.com/react-bootstrap/react-bootstrap) Libraries in React to make this possible.
 
-This example shows how to use Next.js along with [react-bootstrap](https://react-bootstrap.github.io/).
 
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-react-bootstrap)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-react-bootstrap&project-name=with-react-bootstrap&repository-name=with-react-bootstrap)
 
 ## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+To install the needed libraries:
+--npm install next@latest react@latest react-dom@latest
+--npm install react-bootstrap
+--npm install styled-components
 
-```bash
-npx create-next-app --example with-react-bootstrap with-react-bootstrap-app
-```
+To run the application:
+--npm run dev
 
-```bash
-yarn create next-app --example with-react-bootstrap with-react-bootstrap-app
-```
-
-```bash
-pnpm create next-app --example with-react-bootstrap with-react-bootstrap-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+You can view the project from localhost:3000
