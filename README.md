@@ -6,6 +6,7 @@ This example shows a simple sign up and log in page. The application uses the [N
 ## How to use
 
 To install the needed libraries:
+
 ```npm install next@latest react@latest react-dom@latest```
 
 ```npm install react-bootstrap```
